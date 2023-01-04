@@ -8,8 +8,8 @@
 import Combine
 import Foundation
 import Firebase
-import FirebaseAuth
 import FirebaseDatabase
+
 
 enum Keys: String {     // These are the Keys & Values for storing results in Firebase
     case fireName
