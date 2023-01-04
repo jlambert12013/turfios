@@ -9,8 +9,6 @@ import Foundation
 
 class PropertyData: ObservableObject {
     
-    @Published var property = []
-    
     func getPropertyData() async {
         let headers = [ "X-RapidAPI-Key": "1c83f9affemshab506cdc8886fe2p1b9ac4jsnac4bb8278a3c",
                         "X-RapidAPI-Host": "realty-mole-property-api.p.rapidapi.com" ]
