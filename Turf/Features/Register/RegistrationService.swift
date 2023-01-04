@@ -5,13 +5,12 @@
 //  Created by Jim Lambert on 1/4/23.
 //
 
-import Firebase
 import Combine
 import Foundation
+import Firebase
 import FirebaseAuth
 import FirebaseDatabase
-
-
+import FirebaseCore
 
 
 enum Keys: String {     // These are the Keys & Values for storing results in Firebase
@@ -19,19 +18,19 @@ enum Keys: String {     // These are the Keys & Values for storing results in Fi
     case lastName
 }
 
+
+
 protocol RegistrationService {
     func register(with details: Registration) -> AnyPublisher<Void, Error>
 }
 
-final class RegistrationServiceImpl: RegistrationService {
+ final class RegistrationServiceImpl: RegistrationService {
     func register(with details: Registration) -> AnyPublisher<Void, Error> {
-        
+
         Deferred {
             
             Future { promise in
-                
-            
-                
+
                 Auth.auth()
                     .createUser(withEmail: details.email,
                                 password:  details.password ) { res, error in
