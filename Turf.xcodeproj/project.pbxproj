@@ -18,6 +18,7 @@
 		B64D742A29655B9600482949 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D742929655B9600482949 /* RegisterView.swift */; };
 		B64D74302965600900482949 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D742F2965600900482949 /* LoginView.swift */; };
 		B64D74362965617D00482949 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D74352965617D00482949 /* InputTextFieldView.swift */; };
+		B64D74392965680100482949 /* PreviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D74382965680100482949 /* PreviewModifier.swift */; };
 		B652DB2A2963ECD600013AB3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB292963ECD600013AB3 /* Property.swift */; };
 		B652DB2C2963ED4D00013AB3 /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB2B2963ED4D00013AB3 /* PropertyData.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		B64D742929655B9600482949 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		B64D742F2965600900482949 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B64D74352965617D00482949 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
+		B64D74382965680100482949 /* PreviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModifier.swift; sourceTree = "<group>"; };
 		B652DB292963ECD600013AB3 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		B652DB2B2963ED4D00013AB3 /* PropertyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
 		B6A0B902295E224D00A931A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		B64D742B29655E5000482949 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				B64D7437296567E100482949 /* Modifier */,
 				B64D74342965616A00482949 /* Views */,
 			);
 			path = Base;
@@ -123,6 +126,14 @@
 				B64D74352965617D00482949 /* InputTextFieldView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B64D7437296567E100482949 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				B64D74382965680100482949 /* PreviewModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B652DB2A2963ECD600013AB3 /* Property.swift in Sources */,
+				B64D74392965680100482949 /* PreviewModifier.swift in Sources */,
 				B64D74302965600900482949 /* LoginView.swift in Sources */,
 				B611DFE0295D02A2003B16C9 /* ContentView.swift in Sources */,
 				B611DFDE295D02A2003B16C9 /* TurfApp.swift in Sources */,

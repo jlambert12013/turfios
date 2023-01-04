@@ -42,12 +42,19 @@ struct InputTextFieldView: View {
 
 struct InputTextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        InputTextFieldView(text: .constant(""),
-                           placeholder: "Email",
-                           keyboard: .emailAddress,
-                           icon: "envelope")
-        .previewLayout(.sizeThatFits)
-        .previewDisplayName("Text Input")
-        .padding()
+        Group {
+            InputTextFieldView(text: .constant(""),
+                               placeholder: "Email",
+                               keyboard: .emailAddress,
+                               icon: "envelope")
+            .preview(with: "Email")
+            
+            
+            InputTextFieldView(text: .constant(""),
+                               placeholder: "First Name",
+                               keyboard: .emailAddress,
+                               icon: nil)
+            .preview(with: "First Name")
+        }
     }
 }
