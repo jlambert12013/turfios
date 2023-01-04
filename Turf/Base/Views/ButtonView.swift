@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ButtonView: View {
-    
     typealias ActionHandler = () -> Void
     
     let title: String
