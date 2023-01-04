@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RegisterView: View {
+struct RegistrationView: View {
     
     var body: some View {
         NavigationView {
@@ -44,8 +44,8 @@ struct RegisterView: View {
     }
 }
 
-struct RegisterView_Previews: PreviewProvider {
+struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterView()
+        RegistrationView()
     }
 }

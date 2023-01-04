@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-import FirebaseStorage
+import Firebase
 
 protocol RegisterService {
     func register(with details: RegistratinDetails) -> AnyPublisher<Void, Error>
