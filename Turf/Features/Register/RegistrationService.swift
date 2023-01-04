@@ -21,31 +21,34 @@ enum Keys: String {     // These are the Keys & Values for storing results in Fi
 protocol RegistrationService {
     func register(with details: Registration) -> AnyPublisher<Void, Error>
     
-   
+    
 }
 
- final class RegistrationServiceImpl: RegistrationService {
+final class RegistrationServiceImpl: RegistrationService {
     func register(with details: Registration) -> AnyPublisher<Void, Error> {
         
         Deferred {
             
             Future { promise in
                 
-                
-
                 Auth.auth()
                     .createUser(withEmail: details.email,
                                 password:  details.password ) { res, error in
                         
+                        
+                        
                         if let err = error {
+                            
                             promise(.failure(err))
+                            
                         } else {
+                            
                             if let uid = res?.user.uid {
+                                
                                 let values = [Keys.fireName.rawValue: details.firstName,
                                               Keys.lastName.rawValue: details .lastName] as [String: Any]
                                 
-                                Database
-                                    .database()
+                                Database.database()
                                     .reference()
                                     .child("users")
                                     .child(uid)
