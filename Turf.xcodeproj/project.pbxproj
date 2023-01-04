@@ -15,6 +15,8 @@
 		B6239EF62965881E000D1170 /* CloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EF52965881E000D1170 /* CloseModifier.swift */; };
 		B6239EF929658C40000D1170 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EF829658C40000D1170 /* HomeView.swift */; };
 		B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */; };
+		B6239EFE296593E1000D1170 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EFD296593E1000D1170 /* Register.swift */; };
+		B6239F0029659448000D1170 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EFF29659448000D1170 /* RegisterService.swift */; };
 		B64D74202965569100482949 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B64D741F2965569100482949 /* FirebaseAuth */; };
 		B64D74222965569100482949 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74212965569100482949 /* FirebaseFirestore */; };
 		B64D74242965569100482949 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74232965569100482949 /* FirebaseFirestoreSwift */; };
@@ -38,6 +40,8 @@
 		B6239EF52965881E000D1170 /* CloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseModifier.swift; sourceTree = "<group>"; };
 		B6239EF829658C40000D1170 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		B6239EFD296593E1000D1170 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		B6239EFF29659448000D1170 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		B64D74252965582400482949 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B64D742F2965600900482949 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B64D74352965617D00482949 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				B6239EF32965869C000D1170 /* RegisterView.swift */,
+				B6239EFD296593E1000D1170 /* Register.swift */,
+				B6239EFF29659448000D1170 /* RegisterService.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -258,10 +264,12 @@
 				B6239EF42965869C000D1170 /* RegisterView.swift in Sources */,
 				B64D74392965680100482949 /* PreviewModifier.swift in Sources */,
 				B64D743D29656BA200482949 /* ButtonView.swift in Sources */,
+				B6239EFE296593E1000D1170 /* Register.swift in Sources */,
 				B64D74302965600900482949 /* LoginView.swift in Sources */,
 				B6239EF62965881E000D1170 /* CloseModifier.swift in Sources */,
 				B611DFE0295D02A2003B16C9 /* ContentView.swift in Sources */,
 				B611DFDE295D02A2003B16C9 /* TurfApp.swift in Sources */,
+				B6239F0029659448000D1170 /* RegisterService.swift in Sources */,
 				B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */,
 				B64D743B29656A0600482949 /* InputPasswordView.swift in Sources */,
 				B6239EF929658C40000D1170 /* HomeView.swift in Sources */,
