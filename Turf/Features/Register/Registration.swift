@@ -5,6 +5,7 @@
 //  Created by Jim Lambert on 1/4/23.
 //
 
+import Combine
 import Foundation
 
 struct Registration{

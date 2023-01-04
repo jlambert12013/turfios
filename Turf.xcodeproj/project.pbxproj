@@ -17,9 +17,9 @@
 		B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */; };
 		B6239F022965D453000D1170 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239F012965D453000D1170 /* RegistrationService.swift */; };
 		B6239F042965D49A000D1170 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239F032965D49A000D1170 /* Registration.swift */; };
+		B6239F072965E344000D1170 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B6239F062965E344000D1170 /* FirebaseDatabase */; };
+		B6239F092965E351000D1170 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B6239F082965E350000D1170 /* FirebaseDatabaseSwift */; };
 		B64D74202965569100482949 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B64D741F2965569100482949 /* FirebaseAuth */; };
-		B64D74222965569100482949 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74212965569100482949 /* FirebaseFirestore */; };
-		B64D74242965569100482949 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74232965569100482949 /* FirebaseFirestoreSwift */; };
 		B64D74262965582400482949 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64D74252965582400482949 /* GoogleService-Info.plist */; };
 		B64D74302965600900482949 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D742F2965600900482949 /* LoginView.swift */; };
 		B64D74362965617D00482949 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D74352965617D00482949 /* InputTextFieldView.swift */; };
@@ -58,9 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6239F092965E351000D1170 /* FirebaseDatabaseSwift in Frameworks */,
 				B64D74202965569100482949 /* FirebaseAuth in Frameworks */,
-				B64D74222965569100482949 /* FirebaseFirestore in Frameworks */,
-				B64D74242965569100482949 /* FirebaseFirestoreSwift in Frameworks */,
+				B6239F072965E344000D1170 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +73,7 @@
 				B64D74252965582400482949 /* GoogleService-Info.plist */,
 				B611DFDC295D02A2003B16C9 /* Turf */,
 				B611DFDB295D02A2003B16C9 /* Products */,
+				B6239F052965E344000D1170 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +133,13 @@
 				B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		B6239F052965E344000D1170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B64D742B29655E5000482949 /* Base */ = {
@@ -199,8 +207,8 @@
 			name = Turf;
 			packageProductDependencies = (
 				B64D741F2965569100482949 /* FirebaseAuth */,
-				B64D74212965569100482949 /* FirebaseFirestore */,
-				B64D74232965569100482949 /* FirebaseFirestoreSwift */,
+				B6239F062965E344000D1170 /* FirebaseDatabase */,
+				B6239F082965E350000D1170 /* FirebaseDatabaseSwift */,
 			);
 			productName = Turf;
 			productReference = B611DFDA295D02A2003B16C9 /* Turf.app */;
@@ -496,20 +504,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B6239F062965E344000D1170 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B64D741E2965569100482949 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B6239F082965E350000D1170 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B64D741E2965569100482949 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
 		B64D741F2965569100482949 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B64D741E2965569100482949 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
-		};
-		B64D74212965569100482949 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B64D741E2965569100482949 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		B64D74232965569100482949 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B64D741E2965569100482949 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

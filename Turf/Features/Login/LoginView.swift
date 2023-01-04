@@ -52,7 +52,7 @@ struct LoginView: View {
                         showRegister.toggle()
                     }.sheet(isPresented: $showRegister,
                             content: {
-                        RegisterView()
+                        RegistrationView()
                     })
                 }
             }
