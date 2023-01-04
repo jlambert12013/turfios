@@ -15,6 +15,8 @@
 		B6239EF62965881E000D1170 /* CloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EF52965881E000D1170 /* CloseModifier.swift */; };
 		B6239EF929658C40000D1170 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EF829658C40000D1170 /* HomeView.swift */; };
 		B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */; };
+		B6239F022965D453000D1170 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239F012965D453000D1170 /* RegistrationService.swift */; };
+		B6239F042965D49A000D1170 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239F032965D49A000D1170 /* Registration.swift */; };
 		B64D74202965569100482949 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B64D741F2965569100482949 /* FirebaseAuth */; };
 		B64D74222965569100482949 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74212965569100482949 /* FirebaseFirestore */; };
 		B64D74242965569100482949 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74232965569100482949 /* FirebaseFirestoreSwift */; };
@@ -38,6 +40,8 @@
 		B6239EF52965881E000D1170 /* CloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseModifier.swift; sourceTree = "<group>"; };
 		B6239EF829658C40000D1170 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		B6239F012965D453000D1170 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		B6239F032965D49A000D1170 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		B64D74252965582400482949 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B64D742F2965600900482949 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B64D74352965617D00482949 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				B6239EF32965869C000D1170 /* RegistrationView.swift */,
+				B6239F012965D453000D1170 /* RegistrationService.swift */,
+				B6239F032965D49A000D1170 /* Registration.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -260,12 +266,14 @@
 				B64D743D29656BA200482949 /* ButtonView.swift in Sources */,
 				B64D74302965600900482949 /* LoginView.swift in Sources */,
 				B6239EF62965881E000D1170 /* CloseModifier.swift in Sources */,
+				B6239F022965D453000D1170 /* RegistrationService.swift in Sources */,
 				B611DFE0295D02A2003B16C9 /* ContentView.swift in Sources */,
 				B611DFDE295D02A2003B16C9 /* TurfApp.swift in Sources */,
 				B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */,
 				B64D743B29656A0600482949 /* InputPasswordView.swift in Sources */,
 				B6239EF929658C40000D1170 /* HomeView.swift in Sources */,
 				B64D74362965617D00482949 /* InputTextFieldView.swift in Sources */,
+				B6239F042965D49A000D1170 /* Registration.swift in Sources */,
 				B652DB2C2963ED4D00013AB3 /* PropertyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
