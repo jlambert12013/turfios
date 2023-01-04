@@ -14,6 +14,7 @@
 		B64D74202965569100482949 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B64D741F2965569100482949 /* FirebaseAuth */; };
 		B64D74222965569100482949 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74212965569100482949 /* FirebaseFirestore */; };
 		B64D74242965569100482949 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74232965569100482949 /* FirebaseFirestoreSwift */; };
+		B64D74262965582400482949 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64D74252965582400482949 /* GoogleService-Info.plist */; };
 		B652DB2A2963ECD600013AB3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB292963ECD600013AB3 /* Property.swift */; };
 		B652DB2C2963ED4D00013AB3 /* ProperyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB2B2963ED4D00013AB3 /* ProperyViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		B611DFDF295D02A2003B16C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B611DFE1295D02A3003B16C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B611DFE4295D02A3003B16C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B64D74252965582400482949 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B652DB292963ECD600013AB3 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		B652DB2B2963ED4D00013AB3 /* ProperyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperyViewModel.swift; sourceTree = "<group>"; };
 		B6A0B902295E224D00A931A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		B611DFD1295D02A2003B16C9 = {
 			isa = PBXGroup;
 			children = (
+				B64D74252965582400482949 /* GoogleService-Info.plist */,
 				B611DFDC295D02A2003B16C9 /* Turf */,
 				B611DFDB295D02A2003B16C9 /* Products */,
 			);
@@ -165,6 +168,7 @@
 			files = (
 				B611DFE5295D02A3003B16C9 /* Preview Assets.xcassets in Resources */,
 				B611DFE2295D02A3003B16C9 /* Assets.xcassets in Resources */,
+				B64D74262965582400482949 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
