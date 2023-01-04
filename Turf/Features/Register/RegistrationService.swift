@@ -10,8 +10,6 @@ import Foundation
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
-import FirebaseCore
-
 
 enum Keys: String {     // These are the Keys & Values for storing results in Firebase
     case fireName
@@ -22,14 +20,18 @@ enum Keys: String {     // These are the Keys & Values for storing results in Fi
 
 protocol RegistrationService {
     func register(with details: Registration) -> AnyPublisher<Void, Error>
+    
+   
 }
 
  final class RegistrationServiceImpl: RegistrationService {
     func register(with details: Registration) -> AnyPublisher<Void, Error> {
-
+        
         Deferred {
             
             Future { promise in
+                
+                
 
                 Auth.auth()
                     .createUser(withEmail: details.email,
