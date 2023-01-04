@@ -16,12 +16,8 @@ enum Keys: String {     // These are the Keys & Values for storing results in Fi
     case lastName
 }
 
-
-
 protocol RegistrationService {
     func register(with details: Registration) -> AnyPublisher<Void, Error>
-    
-    
 }
 
 final class RegistrationServiceImpl: RegistrationService {
@@ -33,9 +29,7 @@ final class RegistrationServiceImpl: RegistrationService {
                 
                 Auth.auth()
                     .createUser(withEmail: details.email,
-                                password:  details.password ) { res, error in
-                        
-                        
+                                password:  details.password) { res, error in
                         
                         if let err = error {
                             
@@ -53,19 +47,26 @@ final class RegistrationServiceImpl: RegistrationService {
                                     .child("users")
                                     .child(uid)
                                     .updateChildValues(values) { error, ref in
+                                        
                                         if let err = error {
+                                            
                                             promise(.failure(err))
+                                            
                                         } else {
+                                            
                                             promise(.success(()))
+                                            
                                         }
                                     }
+                                
                             } else {
+                                
                                 promise(.failure(NSError(domain: "INVALID USER ID", code: 0, userInfo: nil)))
+                                
                             }
                         }
                         
                     }
-                
             }
         }
         .receive(on: RunLoop.main)
