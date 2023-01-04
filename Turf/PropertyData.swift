@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProppertyViewModel: ObservableObject {
+class PropertyData: ObservableObject {
     
     @Published var property = []
     
