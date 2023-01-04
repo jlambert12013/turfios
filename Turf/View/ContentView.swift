@@ -3,13 +3,13 @@
 //  Turf
 //
 //  Created by Jim Lambert on 12/28/22.
-//
+// “I think the things you regret most in life are the things you didn’t do.” ~ Steve Jobs
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("TURF")
+        Text("Starting Project")
     }
 }
 

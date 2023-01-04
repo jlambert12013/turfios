@@ -3,7 +3,7 @@
 //  Turf
 //
 //  Created by Jim Lambert on 1/2/23.
-//
+// "Let’s Go Invent Tomorrow Rather Than Worrying About What Happened Yesterday."
 
 import Foundation
 
