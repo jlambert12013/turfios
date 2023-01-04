@@ -37,7 +37,7 @@ struct RegisterView: View {
                 })
             }
             .padding(.horizontal, 15)
-            .navigationTitle("Sign Up")
+            .navigationTitle("Register")
             .applyClose()
         }
         
