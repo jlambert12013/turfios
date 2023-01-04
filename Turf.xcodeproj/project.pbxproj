@@ -15,8 +15,9 @@
 		B64D74222965569100482949 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74212965569100482949 /* FirebaseFirestore */; };
 		B64D74242965569100482949 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B64D74232965569100482949 /* FirebaseFirestoreSwift */; };
 		B64D74262965582400482949 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64D74252965582400482949 /* GoogleService-Info.plist */; };
-		B64D742829655B7100482949 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D742729655B7100482949 /* LoginView.swift */; };
 		B64D742A29655B9600482949 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D742929655B9600482949 /* RegisterView.swift */; };
+		B64D74302965600900482949 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D742F2965600900482949 /* LoginView.swift */; };
+		B64D74362965617D00482949 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D74352965617D00482949 /* InputTextFieldView.swift */; };
 		B652DB2A2963ECD600013AB3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB292963ECD600013AB3 /* Property.swift */; };
 		B652DB2C2963ED4D00013AB3 /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB2B2963ED4D00013AB3 /* PropertyData.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +29,9 @@
 		B611DFE1295D02A3003B16C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B611DFE4295D02A3003B16C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B64D74252965582400482949 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B64D742729655B7100482949 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B64D742929655B9600482949 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		B64D742F2965600900482949 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B64D74352965617D00482949 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		B652DB292963ECD600013AB3 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		B652DB2B2963ED4D00013AB3 /* PropertyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
 		B6A0B902295E224D00A931A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -69,11 +71,12 @@
 		B611DFDC295D02A2003B16C9 /* Turf */ = {
 			isa = PBXGroup;
 			children = (
+				B64D742C29655E8900482949 /* Features */,
+				B64D742B29655E5000482949 /* Base */,
 				B611DFDD295D02A2003B16C9 /* TurfApp.swift */,
 				B611DFDF295D02A2003B16C9 /* ContentView.swift */,
 				B652DB292963ECD600013AB3 /* Property.swift */,
 				B652DB2B2963ED4D00013AB3 /* PropertyData.swift */,
-				B64D742729655B7100482949 /* LoginView.swift */,
 				B64D742929655B9600482949 /* RegisterView.swift */,
 				B611DFE3295D02A3003B16C9 /* Preview Content */,
 				B611DFE1295D02A3003B16C9 /* Assets.xcassets */,
@@ -88,6 +91,38 @@
 				B611DFE4295D02A3003B16C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B64D742B29655E5000482949 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B64D74342965616A00482949 /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B64D742C29655E8900482949 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B64D742D29655E9300482949 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B64D742D29655E9300482949 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B64D742F2965600900482949 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B64D74342965616A00482949 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B64D74352965617D00482949 /* InputTextFieldView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,10 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B652DB2A2963ECD600013AB3 /* Property.swift in Sources */,
+				B64D74302965600900482949 /* LoginView.swift in Sources */,
 				B611DFE0295D02A2003B16C9 /* ContentView.swift in Sources */,
 				B611DFDE295D02A2003B16C9 /* TurfApp.swift in Sources */,
 				B64D742A29655B9600482949 /* RegisterView.swift in Sources */,
-				B64D742829655B7100482949 /* LoginView.swift in Sources */,
+				B64D74362965617D00482949 /* InputTextFieldView.swift in Sources */,
 				B652DB2C2963ED4D00013AB3 /* PropertyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
