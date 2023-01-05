@@ -25,12 +25,12 @@ final class SessionServiceImpl: ObservableObject, SessionService {
     @Published var state: SessionState = .loggedOut
     @Published var userDetails: SessionUserDetails?
     
-//    private var let handler: AuthStateDidChangeListenerHandle?
+    //    private var let handler: AuthStateDidChangeListenerHandle?
     
     init(state: SessionState, userDetails: SessionUserDetails? = nil, handler: AuthStateDidChangeListenerHandle?) {
         self.state = state
         self.userDetails = userDetails
-        self.handler = handler
+//        self.handler = handler
     }
     
     
@@ -41,11 +41,11 @@ final class SessionServiceImpl: ObservableObject, SessionService {
 
 private extension SessionServiceImpl {
     func setupFirebaseAuthHandler() {
-        handler = Auth.auth().addStateDidChangeListener { [weak self] res, user in
-            guard let self = self else {
-                return
-            }
-//            self.state == user == nil ? .loggedOut : .loggedIn
-        }
+        //        handler = Auth.auth().addStateDidChangeListener { [weak self] res, user in
+        //            guard let self = self else {
+        //                return
+        //            }
+        //            self.state == user == nil ? .loggedOut : .loggedIn
     }
 }
+
