@@ -6,8 +6,9 @@
 //
 
 import Combine
-import FirebaseAuth
 import Foundation
+import FirebaseAuth
+import FirebaseDatabase
 
 enum SessionState {
     case loggedIn
@@ -27,11 +28,13 @@ final class SessionServiceImpl: ObservableObject, SessionService {
     
     private var handler: AuthStateDidChangeListenerHandle?
     
-    init() { setupFirebaseAuthhandler() }
-    
-    func logOut() {
-        
+    init() {
+        setupFirebaseAuthhandler()
     }
+    
+        func logOut() {
+    
+        }
     
 }
 
@@ -39,31 +42,33 @@ extension SessionServiceImpl {
     
     func setupFirebaseAuthhandler() {
         
-        handler = Auth
-            .auth()
-            .addStateDidChangeListener { [weak self] res, user in
-                guard let self = self else { return }
-                self.state = user == nil ? .loggedOut : .loggedIn
+        handler = Auth.auth().addStateDidChangeListener { [weak self] res, user in
+            
+            guard let self = self else {
+                return
                 
             }
+            
+            self.state = user == nil ? .loggedOut : .loggedIn
+            
+        }
         
     }
     
-    func handleRefresh(with: uid: String) {
+    func handleRefresh(with uid: String) {
         
         Database
             .database()
             .reference()
-            .child()
             .child("users")
             .child(uid)
-            .observe(.value) { [weak self] snapshot in
+            .observe(.value) { [weak self] snapshot  in
                 
                 guard let self = self,
                       let value = snapshot.value as? NSDictionary,
-                      let firstName = value[RegistrationKeys.firstName.rawValue] as? String,
-                      let lastName = value[RegistrationKeys.lastName.rawValue] as? String,
-                      let email = value[RegistrationKeys.email.rawValue] as? String,
+                      let firstName = value[RegistrationKey.firstName.rawValue] as? String,
+                      let lastName = value[RegistrationKey.lastName.rawValue] as? String
+                else { return }
             }
         
     }

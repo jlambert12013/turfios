@@ -16,14 +16,11 @@ struct RegistrationDetails {
 }
 
 extension RegistrationDetails {
-    
     static var new: RegistrationDetails {
-        
         RegistrationDetails(
             email: "",
             password: "",
             firstName: "",
             lastName: "")
-        
     }
 }
