@@ -79,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60ED379296763C300866EB6 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				B652DB2B2963ED4D00013AB3 /* PropertyData.swift */,
+				B652DB292963ECD600013AB3 /* Property.swift */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
 		B611DFD1295D02A2003B16C9 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +111,6 @@
 			children = (
 				B611DFDD295D02A2003B16C9 /* TurfApp.swift */,
 				B611DFDF295D02A2003B16C9 /* ContentView.swift */,
-				B652DB292963ECD600013AB3 /* Property.swift */,
-				B652DB2B2963ED4D00013AB3 /* PropertyData.swift */,
 				B64D742C29655E8900482949 /* Features */,
 				B64D742B29655E5000482949 /* Base */,
 				B611DFE3295D02A3003B16C9 /* Preview Content */,
@@ -172,6 +179,7 @@
 				B64D742D29655E9300482949 /* Login */,
 				B6239EFA29658DBB000D1170 /* ForgotPassword */,
 				B6239EF729658C32000D1170 /* Home */,
+				B60ED379296763C300866EB6 /* Property */,
 			);
 			path = Features;
 			sourceTree = "<group>";
