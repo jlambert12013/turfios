@@ -10,43 +10,62 @@ import FirebaseAuth
 import Foundation
 
 enum SessionState {
-  case loggedIn
-  case loggedOut
+    case loggedIn
+    case loggedOut
 }
 
 protocol SessionService {
-  var state: SessionState { get }
-  var userDetails: SessionUserDetails? { get }
-  func logOut()
+    var state: SessionState { get }
+    var userDetails: SessionUserDetails? { get }
+    func logOut()
 }
 
 final class SessionServiceImpl: ObservableObject, SessionService {
-
-  @Published var state: SessionState = .loggedOut
-  @Published var userDetails: SessionUserDetails?
-
-  private var handler: AuthStateDidChangeListenerHandle?
-
-  init() { setupFirebaseAuthhandler() }
-
-  func logOut() {
-
-  }
-
+    
+    @Published var state: SessionState = .loggedOut
+    @Published var userDetails: SessionUserDetails?
+    
+    private var handler: AuthStateDidChangeListenerHandle?
+    
+    init() { setupFirebaseAuthhandler() }
+    
+    func logOut() {
+        
+    }
+    
 }
 
 extension SessionServiceImpl {
-
-  fileprivate func setupFirebaseAuthhandler() {
-
-    handler = Auth.auth().addStateDidChangeListener { [weak self] res, user in
-
-      guard let self = self else { return }
-
-      self.state = user == nil ? .loggedOut : .loggedIn
-
+    
+    func setupFirebaseAuthhandler() {
+        
+        handler = Auth
+            .auth()
+            .addStateDidChangeListener { [weak self] res, user in
+                guard let self = self else { return }
+                self.state = user == nil ? .loggedOut : .loggedIn
+                
+            }
+        
     }
-
-  }
+    
+    func handleRefresh(with: uid: String) {
+        
+        Database
+            .database()
+            .reference()
+            .child()
+            .child("users")
+            .child(uid)
+            .observe(.value) { [weak self] snapshot in
+                
+                guard let self = self,
+                      let value = snapshot.value as? NSDictionary,
+                      let firstName = value[RegistrationKeys.firstName.rawValue] as? String,
+                      let lastName = value[RegistrationKeys.lastName.rawValue] as? String,
+                      let email = value[RegistrationKeys.email.rawValue] as? String,
+            }
+        
+    }
 }
 
