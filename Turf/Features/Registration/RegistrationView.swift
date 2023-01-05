@@ -15,7 +15,7 @@ struct RegistrationView: View {
         NavigationView {
             VStack(spacing: 32) {
                 VStack(spacing: 16) {
-                    InputTextFieldView(
+                    InputTextF ieldView(
                         text: $vm.userDetails.email,
                         placeholder: "Email",
                         keyboard: .emailAddress,

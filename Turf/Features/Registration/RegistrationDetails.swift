@@ -19,10 +19,11 @@ extension RegistrationDetails {
     
     static var new: RegistrationDetails {
         
-        RegistrationDetails(email: "",
-                     password: "",
-                     firstName: "",
-                     lastName: "")
+        RegistrationDetails(
+            email: "",
+            password: "",
+            firstName: "",
+            lastName: "")
         
     }
 }
