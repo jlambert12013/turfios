@@ -32,9 +32,9 @@ final class SessionServiceImpl: ObservableObject, SessionService {
         setupFirebaseAuthhandler()
     }
     
-        func logOut() {
-    
-        }
+    func logOut() {
+        
+    }
     
 }
 
@@ -57,20 +57,17 @@ extension SessionServiceImpl {
     
     func handleRefresh(with uid: String) {
         
-        Database
-            .database()
-            .reference()
-            .child("users")
-            .child(uid)
-            .observe(.value) { [weak self] snapshot  in
-                
-                guard let self = self,
-                      let value = snapshot.value as? NSDictionary,
-                      let firstName = value[RegistrationKey.firstName.rawValue] as? String,
-                      let lastName = value[RegistrationKey.lastName.rawValue] as? String
-                else { return }
-            }
+        Database.database().reference().child("users").child(uid).observe(.value) { [weak self] snapshot in
+            
+            
+            
+            
+            
+        }
         
     }
+    
+    
 }
+
 
