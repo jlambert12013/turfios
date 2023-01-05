@@ -14,3 +14,15 @@ struct Registration{
     var firstName: String
     var lastName: String
 }
+
+extension Registration {
+    
+    static var new: Registration {
+        
+        Registration(email: "",
+                     password: "",
+                     firstName: "",
+                     lastName: "")
+        
+    }
+}

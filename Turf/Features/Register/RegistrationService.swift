@@ -10,7 +10,6 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
-
 enum Keys: String {     // These are the Keys & Values for storing results in Firebase
     case fireName
     case lastName
@@ -61,7 +60,9 @@ final class RegistrationServiceImpl: RegistrationService {
                                 
                             } else {
                                 
-                                promise(.failure(NSError(domain: "INVALID USER ID", code: 0, userInfo: nil)))
+                                promise(.failure(NSError(domain: "INVALID USER ID",
+                                                         code: 0,
+                                                         userInfo: nil)))
                                 
                             }
                         }
