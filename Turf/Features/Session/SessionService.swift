@@ -29,7 +29,7 @@ final class SessionServiceImpl: ObservableObject, SessionService {
     private var handler: AuthStateDidChangeListenerHandle?
     
     init() {
-        setupFirebaseAuthHandler()
+      setupFirebaseAuthhandler()
     }
     
     func logOut() {
