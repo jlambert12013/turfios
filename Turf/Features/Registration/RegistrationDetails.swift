@@ -8,18 +8,18 @@
 import Combine
 import Foundation
 
-struct Registration{
+struct RegistrationDetails {
     var email: String
     var password: String
     var firstName: String
     var lastName: String
 }
 
-extension Registration {
+extension RegistrationDetails {
     
-    static var new: Registration {
+    static var new: RegistrationDetails {
         
-        Registration(email: "",
+        RegistrationDetails(email: "",
                      password: "",
                      firstName: "",
                      lastName: "")
