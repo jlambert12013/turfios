@@ -168,10 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				B6C0B9B52966B2B3006D2CDB /* Session */,
-				B6239EFA29658DBB000D1170 /* ForgotPassword */,
-				B6239EF729658C32000D1170 /* Home */,
 				B6239EF12965866C000D1170 /* Registration */,
 				B64D742D29655E9300482949 /* Login */,
+				B6239EFA29658DBB000D1170 /* ForgotPassword */,
+				B6239EF729658C32000D1170 /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -206,8 +206,8 @@
 		B6C0B9B52966B2B3006D2CDB /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */,
 				B6C0B9B82966B35D006D2CDB /* SessionService.swift */,
+				B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */,
 			);
 			path = Session;
 			sourceTree = "<group>";

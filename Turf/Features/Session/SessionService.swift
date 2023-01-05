@@ -17,35 +17,40 @@ enum SessionState {
 protocol SessionService {
     var state: SessionState { get }
     var userDetails: SessionUserDetails? { get }
-    
     func logOut()
 }
 
+
 final class SessionServiceImpl: ObservableObject, SessionService {
+    
     @Published var state: SessionState = .loggedOut
     @Published var userDetails: SessionUserDetails?
     
-    //    private var let handler: AuthStateDidChangeListenerHandle?
+    private var handler: AuthStateDidChangeListenerHandle?
     
-    init(state: SessionState, userDetails: SessionUserDetails? = nil, handler: AuthStateDidChangeListenerHandle?) {
-        self.state = state
-        self.userDetails = userDetails
-//        self.handler = handler
+    init() {
+        setupFirebaseAuthHandler()
     }
-    
     
     func logOut() {
-        //
+        
     }
+    
 }
 
 private extension SessionServiceImpl {
-    func setupFirebaseAuthHandler() {
-        //        handler = Auth.auth().addStateDidChangeListener { [weak self] res, user in
-        //            guard let self = self else {
-        //                return
-        //            }
-        //            self.state == user == nil ? .loggedOut : .loggedIn
+    
+    func setupFirebaseAuthhandler() {
+        
+        handler = Auth
+            .auth()
+            .addStateDidChangeListener { [weak self] res, user in
+                
+                guard let self = self else { return }
+                
+                self.state = user == nil ? .loggedOut : .loggedIn
+                
+            }
+        
     }
 }
-
