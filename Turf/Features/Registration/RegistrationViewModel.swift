@@ -24,6 +24,7 @@ protocol RegistrationViewModel {
 
 
 final class RegistrationViewModelImpl: ObservableObject, RegistrationViewModel {
+    
     let service: RegistrationService
     var state: RegistrationState = .na
     var userDetails: Registration = Registration.new

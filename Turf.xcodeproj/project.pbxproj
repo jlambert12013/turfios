@@ -121,7 +121,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B6239EF12965866C000D1170 /* Register */ = {
+		B6239EF12965866C000D1170 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
 				B6239F032965D49A000D1170 /* Registration.swift */,
@@ -129,7 +129,7 @@
 				B64CF0DC296637F7006C26B9 /* RegistrationViewModel.swift */,
 				B6239F012965D453000D1170 /* RegistrationService.swift */,
 			);
-			path = Register;
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		B6239EF729658C32000D1170 /* Home */ = {
@@ -170,7 +170,7 @@
 				B6C0B9B52966B2B3006D2CDB /* Session */,
 				B6239EFA29658DBB000D1170 /* ForgotPassword */,
 				B6239EF729658C32000D1170 /* Home */,
-				B6239EF12965866C000D1170 /* Register */,
+				B6239EF12965866C000D1170 /* Registration */,
 				B64D742D29655E9300482949 /* Login */,
 			);
 			path = Features;
