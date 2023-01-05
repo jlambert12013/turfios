@@ -9,31 +9,33 @@ import SwiftUI
 
 struct RegistrationView: View {
     
+    @State private var vm = RegistrationViewModelImpl(service: RegistrationServiceImpl())
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 32) {
                 VStack(spacing: 16) {
-                    InputTextFieldView(text: .constant(""),
+                    InputTextFieldView(text: $vm.userDetails.email,
                                        placeholder: "Email",
                                        keyboard: .emailAddress,
                                        icon: "envelope")
-                    InputTextFieldView(text: .constant(""),
+                    InputTextFieldView(text: $vm.userDetails.password,
                                        placeholder: "Password",
                                        keyboard: .default,
                                        icon: "lock")
                     
                     Divider()
                     
-                    InputTextFieldView(text: .constant(""),
+                    InputTextFieldView(text: $vm.userDetails.firstName,
                                        placeholder: "First Name",
                                        keyboard: .default)
-                    InputTextFieldView(text: .constant(""),
+                    InputTextFieldView(text: $vm.userDetails.lastName,
                                        placeholder: "Last Name",
                                        keyboard: .default)
                 }
                 
                 ButtonView(title: "Sign Up", action: {
-                    // TODO: Handle Register
+                    vm.register()
                 })
             }
             .padding(.horizontal, 15)

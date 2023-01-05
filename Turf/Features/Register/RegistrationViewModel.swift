@@ -23,16 +23,18 @@ protocol RegistrationViewModel {
 }
 
 
-final class RegistrationViewModelImpl: RegistrationViewModel {
+final class RegistrationViewModelImpl: ObservableObject, RegistrationViewModel {
     let service: RegistrationService
     var state: RegistrationState = .na
     var userDetails: Registration = Registration.new
+    
+    private var subscriptions = Set<AnyCancellable>()
     
     init(service: RegistrationService) {
         self.service = service
     }
     
-    private var subscriptions = Set<AnyCancellable>()
+    
     
     func register() {
         

@@ -29,6 +29,7 @@
 		B64D743D29656BA200482949 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D743C29656BA200482949 /* ButtonView.swift */; };
 		B652DB2A2963ECD600013AB3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB292963ECD600013AB3 /* Property.swift */; };
 		B652DB2C2963ED4D00013AB3 /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB2B2963ED4D00013AB3 /* PropertyData.swift */; };
+		B6C0B9B72966B2E9006D2CDB /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */; };
 		B6D96D722965EE71006749FD /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = B6D96D712965EE71006749FD /* FirebaseFunctions */; };
 		B6D96D742965EF5A006749FD /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B6D96D732965EF5A006749FD /* FirebaseAuthCombine-Community */; };
 		B6D96D762965EF6C006749FD /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B6D96D752965EF6C006749FD /* FirebaseFunctionsCombine-Community */; };
@@ -56,6 +57,7 @@
 		B652DB292963ECD600013AB3 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		B652DB2B2963ED4D00013AB3 /* PropertyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
 		B6A0B902295E224D00A931A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		B64D742C29655E8900482949 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B6C0B9B52966B2B3006D2CDB /* Session */,
 				B6239EFA29658DBB000D1170 /* ForgotPassword */,
 				B6239EF729658C32000D1170 /* Home */,
 				B6239EF12965866C000D1170 /* Register */,
@@ -196,6 +199,14 @@
 				B6239EF52965881E000D1170 /* CloseModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		B6C0B9B52966B2B3006D2CDB /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */,
+			);
+			path = Session;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				B6239F022965D453000D1170 /* RegistrationService.swift in Sources */,
 				B611DFE0295D02A2003B16C9 /* ContentView.swift in Sources */,
 				B611DFDE295D02A2003B16C9 /* TurfApp.swift in Sources */,
+				B6C0B9B72966B2E9006D2CDB /* SessionUserDetails.swift in Sources */,
 				B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */,
 				B64D743B29656A0600482949 /* InputPasswordView.swift in Sources */,
 				B6239EF929658C40000D1170 /* HomeView.swift in Sources */,
