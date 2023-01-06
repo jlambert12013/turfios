@@ -43,29 +43,14 @@ extension SessionServiceImpl {
     func setupFirebaseAuthhandler() {
         
         handler = Auth.auth().addStateDidChangeListener { [weak self] res, user in
-            
-            guard let self = self else {
-                return
-                
-            }
-            
+            guard let self = self else { return }
             self.state = user == nil ? .loggedOut : .loggedIn
             
         }
         
     }
     
-    func handleRefresh(with uid: String) {
-        
-        Database.database().reference().child("users").child(uid).observe(.value) { [weak self] snapshot in
-            
-            
-            
-            
-            
-        }
-        
-    }
+    
     
     
 }

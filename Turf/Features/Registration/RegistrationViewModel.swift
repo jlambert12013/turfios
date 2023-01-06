@@ -28,7 +28,7 @@ final class RegistrationViewModelImpl: ObservableObject, RegistrationViewModel {
     
     var state: RegistrationState = .na
     
-    var userDetails: RegistrationDetails = RegistrationDetails.new
+    @Published var userDetails: RegistrationDetails = RegistrationDetails.new
     
     private var subscriptions = Set<AnyCancellable>()
     
