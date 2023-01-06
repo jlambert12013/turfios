@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 import FirebaseAuth
-import FirebaseDatabase
+
 
 enum SessionState {
     case loggedIn
@@ -21,6 +21,12 @@ protocol SessionService {
     func logOut()
 }
 
+
+
+
+
+
+// Implementation of Session Service
 final class SessionServiceImpl: ObservableObject, SessionService {
     
     @Published var state: SessionState = .loggedOut
@@ -38,13 +44,19 @@ final class SessionServiceImpl: ObservableObject, SessionService {
     
 }
 
-extension SessionServiceImpl {
+private extension SessionServiceImpl {
     
     func setupFirebaseAuthHandler() {
-        
+        handler = Auth.auth().addStateDidChangeListener { [weak self ] res, user in
+            guard let self = self else { return }
+            if user != nil {
+                self.state = .loggedIn
+            } else {
+                self.state = .loggedOut
+            }
+        }
         
     }
-    
     
 }
 
