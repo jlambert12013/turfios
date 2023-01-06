@@ -214,8 +214,8 @@
 		B6C0B9B52966B2B3006D2CDB /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				B6C0B9B82966B35D006D2CDB /* SessionService.swift */,
-				B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */,
+				B6E886552968DABD001F3A4F /* Serivce */,
+				B6E886542968DAB4001F3A4F /* Model */,
 			);
 			path = Session;
 			sourceTree = "<group>";
@@ -250,6 +250,22 @@
 				B6239F032965D49A000D1170 /* RegistrationDetails.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B6E886542968DAB4001F3A4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6E886552968DABD001F3A4F /* Serivce */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0B9B82966B35D006D2CDB /* SessionService.swift */,
+			);
+			path = Serivce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
