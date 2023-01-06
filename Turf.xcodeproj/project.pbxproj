@@ -131,10 +131,10 @@
 		B6239EF12965866C000D1170 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				B6239F032965D49A000D1170 /* RegistrationDetails.swift */,
-				B6239EF32965869C000D1170 /* RegistrationView.swift */,
-				B64CF0DC296637F7006C26B9 /* RegistrationViewModel.swift */,
-				B6239F012965D453000D1170 /* RegistrationService.swift */,
+				B6E886532968DA15001F3A4F /* Model */,
+				B6E886522968D9F4001F3A4F /* Service */,
+				B6E886512968D9E6001F3A4F /* View */,
+				B6E886502968D9DB001F3A4F /* ViewModel */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -218,6 +218,38 @@
 				B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		B6E886502968D9DB001F3A4F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B64CF0DC296637F7006C26B9 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6E886512968D9E6001F3A4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6239EF32965869C000D1170 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6E886522968D9F4001F3A4F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B6239F012965D453000D1170 /* RegistrationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B6E886532968DA15001F3A4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6239F032965D49A000D1170 /* RegistrationDetails.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
