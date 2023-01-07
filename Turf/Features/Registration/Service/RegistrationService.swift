@@ -12,8 +12,9 @@ import Foundation
 
 
 // These are the Keys & Values for storing results in Firebase
-enum RegistrationKey: String {
-    case fireName
+enum RegistrationKeys: String {
+    case email
+    case firstName
     case lastName
 }
 
@@ -39,8 +40,9 @@ final class RegistrationServiceImpl: RegistrationService {
                         } else {
                             
                             if let uid = res?.user.uid {
-                                let values = [ RegistrationKey.fireName.rawValue: details.firstName,
-                                               RegistrationKey.lastName.rawValue: details.lastName ] as [String: Any]
+                                let values = [ RegistrationKeys.email.rawValue: details.email,
+                                               RegistrationKeys.firstName.rawValue: details.firstName,
+                                               RegistrationKeys.lastName.rawValue: details.lastName ] as [String: Any]
                                 
                                 Database
                                     .database()
