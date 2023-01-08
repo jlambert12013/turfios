@@ -6,28 +6,24 @@
 // “The only way to do great work is to love what you do” - Steve Jobs
 
 import FirebaseCore
+import FirebaseAuthCombineSwift
 import SwiftUI
 
-final class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
-    ) -> Bool {
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
         return true
     }
 }
 
-@main struct TurfApp: App {
+@main
+struct TurfApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject var session = SessionServiceImpl()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                switch session.state {
-                case .loggedIn: HomeView().environmentObject(session)
-                case .loggedOut: LoginView()
-                }
+                ContentView()
             }
         }
     }

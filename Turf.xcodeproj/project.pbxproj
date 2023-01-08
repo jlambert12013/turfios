@@ -11,55 +11,23 @@
 		B611DFE0295D02A2003B16C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611DFDF295D02A2003B16C9 /* ContentView.swift */; };
 		B611DFE2295D02A3003B16C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B611DFE1295D02A3003B16C9 /* Assets.xcassets */; };
 		B611DFE5295D02A3003B16C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B611DFE4295D02A3003B16C9 /* Preview Assets.xcassets */; };
-		B6239EF42965869C000D1170 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EF32965869C000D1170 /* RegistrationView.swift */; };
-		B6239EF62965881E000D1170 /* CloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EF52965881E000D1170 /* CloseModifier.swift */; };
-		B6239EF929658C40000D1170 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EF829658C40000D1170 /* HomeView.swift */; };
-		B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */; };
-		B6239F022965D453000D1170 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239F012965D453000D1170 /* RegistrationService.swift */; };
-		B6239F042965D49A000D1170 /* RegistrationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6239F032965D49A000D1170 /* RegistrationDetails.swift */; };
 		B6239F072965E344000D1170 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B6239F062965E344000D1170 /* FirebaseDatabase */; };
 		B6239F092965E351000D1170 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B6239F082965E350000D1170 /* FirebaseDatabaseSwift */; };
-		B64CF0DD296637F7006C26B9 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CF0DC296637F7006C26B9 /* RegistrationViewModel.swift */; };
 		B64D74202965569100482949 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B64D741F2965569100482949 /* FirebaseAuth */; };
 		B64D74262965582400482949 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64D74252965582400482949 /* GoogleService-Info.plist */; };
-		B64D74302965600900482949 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D742F2965600900482949 /* LoginView.swift */; };
-		B64D74362965617D00482949 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D74352965617D00482949 /* InputTextFieldView.swift */; };
-		B64D74392965680100482949 /* PreviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D74382965680100482949 /* PreviewModifier.swift */; };
-		B64D743B29656A0600482949 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D743A29656A0600482949 /* InputPasswordView.swift */; };
-		B64D743D29656BA200482949 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D743C29656BA200482949 /* ButtonView.swift */; };
-		B652DB2A2963ECD600013AB3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB292963ECD600013AB3 /* Property.swift */; };
-		B652DB2C2963ED4D00013AB3 /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652DB2B2963ED4D00013AB3 /* PropertyData.swift */; };
-		B6C0B9B72966B2E9006D2CDB /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */; };
-		B6C0B9B92966B35D006D2CDB /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C0B9B82966B35D006D2CDB /* SessionService.swift */; };
 		B6D96D722965EE71006749FD /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = B6D96D712965EE71006749FD /* FirebaseFunctions */; };
 		B6D96D742965EF5A006749FD /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B6D96D732965EF5A006749FD /* FirebaseAuthCombine-Community */; };
 		B6D96D762965EF6C006749FD /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B6D96D752965EF6C006749FD /* FirebaseFunctionsCombine-Community */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B611DFDA295D02A2003B16C9 /* Turf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B611DFDD295D02A2003B16C9 /* TurfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurfApp.swift; sourceTree = "<group>"; };
 		B611DFDF295D02A2003B16C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B611DFE1295D02A3003B16C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B611DFE4295D02A3003B16C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B6239EF32965869C000D1170 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		B6239EF52965881E000D1170 /* CloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseModifier.swift; sourceTree = "<group>"; };
-		B6239EF829658C40000D1170 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		B6239F012965D453000D1170 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
-		B6239F032965D49A000D1170 /* RegistrationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetails.swift; sourceTree = "<group>"; };
-		B64CF0DC296637F7006C26B9 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		B64D74252965582400482949 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B64D742F2965600900482949 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		B64D74352965617D00482949 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
-		B64D74382965680100482949 /* PreviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModifier.swift; sourceTree = "<group>"; };
-		B64D743A29656A0600482949 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
-		B64D743C29656BA200482949 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		B652DB292963ECD600013AB3 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
-		B652DB2B2963ED4D00013AB3 /* PropertyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
 		B6A0B902295E224D00A931A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
-		B6C0B9B82966B35D006D2CDB /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		B6BCA473296A5669004F1C1A /* Turf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Turf.app; path = "/Users/jimlambert/Desktop/turfios/build/Debug-iphoneos/Turf.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,31 +47,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B60ED379296763C300866EB6 /* Property */ = {
-			isa = PBXGroup;
-			children = (
-				B652DB2B2963ED4D00013AB3 /* PropertyData.swift */,
-				B652DB292963ECD600013AB3 /* Property.swift */,
-			);
-			path = Property;
-			sourceTree = "<group>";
-		};
 		B611DFD1295D02A2003B16C9 = {
 			isa = PBXGroup;
 			children = (
 				B64D74252965582400482949 /* GoogleService-Info.plist */,
 				B611DFDC295D02A2003B16C9 /* Turf */,
-				B611DFDB295D02A2003B16C9 /* Products */,
-				B6239F052965E344000D1170 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		B611DFDB295D02A2003B16C9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B611DFDA295D02A2003B16C9 /* Turf.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B611DFDC295D02A2003B16C9 /* Turf */ = {
@@ -111,11 +60,9 @@
 			children = (
 				B611DFDD295D02A2003B16C9 /* TurfApp.swift */,
 				B611DFDF295D02A2003B16C9 /* ContentView.swift */,
-				B64D742C29655E8900482949 /* Features */,
-				B64D742B29655E5000482949 /* Base */,
-				B611DFE3295D02A3003B16C9 /* Preview Content */,
 				B611DFE1295D02A3003B16C9 /* Assets.xcassets */,
 				B6A0B902295E224D00A931A9 /* Info.plist */,
+				B611DFE3295D02A3003B16C9 /* Preview Content */,
 			);
 			path = Turf;
 			sourceTree = "<group>";
@@ -126,154 +73,6 @@
 				B611DFE4295D02A3003B16C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B6239EF12965866C000D1170 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				B6E886532968DA15001F3A4F /* Model */,
-				B6E886522968D9F4001F3A4F /* Service */,
-				B6E886512968D9E6001F3A4F /* View */,
-				B6E886502968D9DB001F3A4F /* ViewModel */,
-			);
-			path = Registration;
-			sourceTree = "<group>";
-		};
-		B6239EF729658C32000D1170 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				B63126CB2969139D00B641F2 /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		B6239EFA29658DBB000D1170 /* ForgotPassword */ = {
-			isa = PBXGroup;
-			children = (
-				B6239EFB29658DE1000D1170 /* ForgotPasswordView.swift */,
-			);
-			path = ForgotPassword;
-			sourceTree = "<group>";
-		};
-		B6239F052965E344000D1170 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B63126CB2969139D00B641F2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B6239EF829658C40000D1170 /* HomeView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B64D742B29655E5000482949 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B64D7437296567E100482949 /* Modifier */,
-				B64D74342965616A00482949 /* Views */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		B64D742C29655E8900482949 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				B6C0B9B52966B2B3006D2CDB /* Session */,
-				B6239EF12965866C000D1170 /* Registration */,
-				B64D742D29655E9300482949 /* Login */,
-				B6239EFA29658DBB000D1170 /* ForgotPassword */,
-				B6239EF729658C32000D1170 /* Home */,
-				B60ED379296763C300866EB6 /* Property */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		B64D742D29655E9300482949 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				B64D742F2965600900482949 /* LoginView.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		B64D74342965616A00482949 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B64D74352965617D00482949 /* InputTextFieldView.swift */,
-				B64D743A29656A0600482949 /* InputPasswordView.swift */,
-				B64D743C29656BA200482949 /* ButtonView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B64D7437296567E100482949 /* Modifier */ = {
-			isa = PBXGroup;
-			children = (
-				B64D74382965680100482949 /* PreviewModifier.swift */,
-				B6239EF52965881E000D1170 /* CloseModifier.swift */,
-			);
-			path = Modifier;
-			sourceTree = "<group>";
-		};
-		B6C0B9B52966B2B3006D2CDB /* Session */ = {
-			isa = PBXGroup;
-			children = (
-				B6E886552968DABD001F3A4F /* Serivce */,
-				B6E886542968DAB4001F3A4F /* Model */,
-			);
-			path = Session;
-			sourceTree = "<group>";
-		};
-		B6E886502968D9DB001F3A4F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				B64CF0DC296637F7006C26B9 /* RegistrationViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		B6E886512968D9E6001F3A4F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B6239EF32965869C000D1170 /* RegistrationView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B6E886522968D9F4001F3A4F /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				B6239F012965D453000D1170 /* RegistrationService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		B6E886532968DA15001F3A4F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B6239F032965D49A000D1170 /* RegistrationDetails.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B6E886542968DAB4001F3A4F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B6C0B9B62966B2E9006D2CDB /* SessionUserDetails.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B6E886552968DABD001F3A4F /* Serivce */ = {
-			isa = PBXGroup;
-			children = (
-				B6C0B9B82966B35D006D2CDB /* SessionService.swift */,
-			);
-			path = Serivce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +100,7 @@
 				B6D96D752965EF6C006749FD /* FirebaseFunctionsCombine-Community */,
 			);
 			productName = Turf;
-			productReference = B611DFDA295D02A2003B16C9 /* Turf.app */;
+			productReference = B6BCA473296A5669004F1C1A /* Turf.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -331,7 +130,7 @@
 			packageReferences = (
 				B64D741E2965569100482949 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = B611DFDB295D02A2003B16C9 /* Products */;
+			productRefGroup = B611DFD1295D02A2003B16C9;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -358,24 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B652DB2A2963ECD600013AB3 /* Property.swift in Sources */,
-				B6239EF42965869C000D1170 /* RegistrationView.swift in Sources */,
-				B64D74392965680100482949 /* PreviewModifier.swift in Sources */,
-				B64D743D29656BA200482949 /* ButtonView.swift in Sources */,
-				B64D74302965600900482949 /* LoginView.swift in Sources */,
-				B6239EF62965881E000D1170 /* CloseModifier.swift in Sources */,
-				B6C0B9B92966B35D006D2CDB /* SessionService.swift in Sources */,
-				B6239F022965D453000D1170 /* RegistrationService.swift in Sources */,
 				B611DFE0295D02A2003B16C9 /* ContentView.swift in Sources */,
 				B611DFDE295D02A2003B16C9 /* TurfApp.swift in Sources */,
-				B6C0B9B72966B2E9006D2CDB /* SessionUserDetails.swift in Sources */,
-				B6239EFC29658DE1000D1170 /* ForgotPasswordView.swift in Sources */,
-				B64D743B29656A0600482949 /* InputPasswordView.swift in Sources */,
-				B6239EF929658C40000D1170 /* HomeView.swift in Sources */,
-				B64D74362965617D00482949 /* InputTextFieldView.swift in Sources */,
-				B64CF0DD296637F7006C26B9 /* RegistrationViewModel.swift in Sources */,
-				B6239F042965D49A000D1170 /* RegistrationDetails.swift in Sources */,
-				B652DB2C2963ED4D00013AB3 /* PropertyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
